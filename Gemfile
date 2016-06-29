@@ -46,3 +46,18 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'compass-rails', '~> 1.1.2'
+gem 'devise'
+gem 'high_voltage'
+gem 'therubyracer', :platform=>:ruby
+gem 'thin'
+gem 'zurb-foundation', '~> 4.3.2'
+
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
