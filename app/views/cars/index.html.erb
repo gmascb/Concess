@@ -20,9 +20,9 @@
         <td><%= car.color %></td>
         <td><%= car.price %></td>
         <td><%= car.year %></td>
-        <td><%= link_to 'Show', car %></td>
-        <td><%= link_to 'Edit', edit_car_path(car) %></td>
-        <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Visualizar', car %></td>
+        <td><%= link_to 'Editar', edit_car_path(car) %></td>
+        <td><%= link_to 'Apagar', car, method: :delete, data: { confirm: 'Você tem certeza disto? <br /> Esta exclusão é irreversivel.' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Car', new_car_path %>
+<%= link_to 'Novo', new_car_path %>

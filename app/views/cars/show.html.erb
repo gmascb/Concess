@@ -1,29 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @car.name %>
-</p>
+<table style="width:100%">
+  <tr>
+    <td>
+      <p>
+        <strong>Name:</strong>
+        <%= @car.name %>
+      </p>
+      <p>
+        <strong>Color:</strong>
+        <%= @car.color %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <%= @car.price %>
+      </p>
+      <p>
+        <strong>Year:</strong>
+        <%= @car.year %>
+      </p>
+    </td>
+    <td>
+      <p>
+        <strong>Foto:</strong>
+        <%= image_tag @car.avatar.url(:medium) %>
+      </p>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <strong>Color:</strong>
-  <%= @car.color %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @car.price %>
-</p>
-
-<p>
-  <strong>Year:</strong>
-  <%= @car.year %>
-</p>
-
-<p>
-  <strong>Imagem:</strong>
-  <%= image_tag @car.avatar.url(:medium) %>
-</p>
-
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<%= link_to 'Editar', edit_car_path(@car) %> |
+<%= link_to 'Voltar', cars_path %>
