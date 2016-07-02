@@ -21,6 +21,7 @@ gem 'high_voltage'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
 gem 'zurb-foundation', '~> 4.3.2'
+gem "paperclip", "~> 5.0.0"
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
