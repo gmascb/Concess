@@ -22,7 +22,6 @@
         <td><%= car.year %></td>
         <td><%= link_to 'Visualizar', car %></td>
         <td><%= link_to 'Editar', edit_car_path(car) %></td>
-        <td><%= link_to 'Apagar', car, method: :delete, data: { confirm: 'Você tem certeza disto? <br /> Esta exclusão é irreversivel.' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -36,4 +36,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  
+  <td><%= link_to 'Apagar', @car, method: :delete, data: { confirm: 'Você tem certeza disto? <br /> Esta exclusão é irreversivel.' } %></td>
+  
 <% end %>
